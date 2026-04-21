@@ -70,7 +70,7 @@ const CAMPFIRE_MELODY = [
 
 // Fandom Member Data (Using aesthetic aesthetic placeholders for compilation safety, acts as members)
 const SVT_MEMBERS = [
-  { name: "S.Coups", quote: "You are doing your best. That's more than enough.", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" },
+  { name: "S.Coups", quote: "You are doing your best. That's more than enough.", img: "https://i.pinimg.com/736x/76/77/cb/7677cb5eb7d22511af903d3b16b46b70.jpg" },
   { name: "Jeonghan", quote: "It's okay to rest when you're tired. Lean on us.", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400" },
   { name: "Hoshi", quote: "Shine brightly! Your existence is a star.", img: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?auto=format&fit=crop&q=80&w=400" },
   { name: "Woozi", quote: "Your hard work will pay off, just take it step by step.", img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400" }
