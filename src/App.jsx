@@ -135,7 +135,7 @@ const Piano = () => {
           </div>
         ))}
       </div>
-      <p className="text-pink-500 text-sm italic">Tap any keys randomly. It will always play the Campfire tune.</p>
+      <p className="text-pink-500 text-sm italic">Tap any keys randomly.</p>
     </div>
   );
 };
