@@ -130,7 +130,7 @@ const Piano = () => {
               <button onClick={playNextNote} className="w-12 h-40 bg-white hover:bg-pink-50 border border-pink-200 rounded-b-md focus:outline-none active:bg-pink-100 transition-colors cursor-pointer" />
             ) : (
               <button onClick={playNextNote} className="absolute -left-3 w-6 h-24 bg-pink-800 hover:bg-pink-700 rounded-b-sm z-10 focus:outline-none active:bg-pink-600 border border-pink-900 cursor-pointer" style={{ marginLeft: '1.5rem' }} />
-            )}
+            )} 
           </div>
         ))}
       </div>
