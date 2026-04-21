@@ -3,9 +3,9 @@ import { Heart, Music, Star, ArrowLeft, PlayCircle, PauseCircle, Sparkles, Mic, 
 
 // Using external audio URLs to ensure the application compiles and runs successfully in the preview.
 // (You can change these back to your local imports in your VS Code!)
-import song from './music/s4.mp3';
-import song2 from './music/s2.mp3';
-import song3 from './music/s3.mp3';
+const song = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
+const song2 = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
+const song3 = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
 
 // --- DATA ---
 const EMOTIONS = [
@@ -130,11 +130,11 @@ const Piano = () => {
               <button onClick={playNextNote} className="w-12 h-40 bg-white hover:bg-pink-50 border border-pink-200 rounded-b-md focus:outline-none active:bg-pink-100 transition-colors cursor-pointer" />
             ) : (
               <button onClick={playNextNote} className="absolute -left-3 w-6 h-24 bg-pink-800 hover:bg-pink-700 rounded-b-sm z-10 focus:outline-none active:bg-pink-600 border border-pink-900 cursor-pointer" style={{ marginLeft: '1.5rem' }} />
-            )} 
+            )}
           </div>
         ))}
       </div>
-      <p className="text-pink-500 text-sm italic">Tap any keys randomly.</p>
+      <p className="text-pink-500 text-sm italic">Tap any keys randomly. It will always play the Campfire tune.</p>
     </div>
   );
 };
@@ -142,7 +142,7 @@ const Piano = () => {
 // 2. Music Box with Dancing Ballerina
 const MusicBox = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null); 
+  const audioRef = useRef(null);
 
   useEffect(() => {
     audioRef.current = new Audio(song);
@@ -311,20 +311,22 @@ const SVTZone = () => {
 
       {/* Video & Album Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-        {/* Local Video from /video folder */}
+        {/* Healing Video */}
         <div className="bg-pink-50/80 p-6 rounded-3xl shadow-xl backdrop-blur-sm border-2 border-pink-200">
           <h3 className="text-xl font-bold text-pink-700 mb-4 flex items-center gap-2">
             <PlayCircle size={22}/> Healing Video
           </h3>
           <div className="aspect-video rounded-2xl overflow-hidden shadow-inner bg-pink-200 border-2 border-pink-300 relative group">
-            <video 
-              src="src/video/m1.mp4" 
-              controls 
-              className="w-full h-full object-cover"
-              poster="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800"
-            >
-              Your browser does not support the video tag.
-            </video>
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/hybZ-akxuuA" 
+              title="SEVENTEEN Healing Video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
 
@@ -377,20 +379,22 @@ const TXTZone = () => {
 
       {/* Video & Album Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-        {/* Local Video 2 from /video folder */}
+        {/* Healing Video */}
         <div className="bg-pink-50/80 p-6 rounded-3xl shadow-xl backdrop-blur-sm border-2 border-pink-200">
           <h3 className="text-xl font-bold text-pink-700 mb-4 flex items-center gap-2">
             <PlayCircle size={22}/> Healing Video
           </h3>
           <div className="aspect-video rounded-2xl overflow-hidden shadow-inner bg-blue-100 border-2 border-pink-300 relative group">
-            <video 
-              src="src/video/m2.mp4" 
-              controls 
-              className="w-full h-full object-cover"
-              poster="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=800"
-            >
-              Your browser does not support the video tag.
-            </video>
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/FVYjsfl5vfs" 
+              title="TXT Healing Video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
 
