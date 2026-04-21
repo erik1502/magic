@@ -142,7 +142,7 @@ const Piano = () => {
 // 2. Music Box with Dancing Ballerina
 const MusicBox = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+  const audioRef = useRef(null); 
 
   useEffect(() => {
     audioRef.current = new Audio(song);
