@@ -3,10 +3,11 @@ import { Heart, Music, Star, ArrowLeft, PlayCircle, PauseCircle, Sparkles, Mic, 
 
 // Using external audio URLs to ensure the application compiles and runs successfully in the preview.
 // (You can change these back to your local imports in your VS Code!)
-const song = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
-const song2 = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
-const song3 = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Brahms_Lullaby.ogg";
+ import song from './music/s4.mp3';
 
+import song2 from './music/s2.mp3';
+
+import song3 from './music/s3.mp3'; 
 // --- DATA ---
 const EMOTIONS = [
   { id: 'sad', label: 'Sad 🌧️', color: 'bg-pink-300', float: 'animate-[bounce_3s_infinite]' },
